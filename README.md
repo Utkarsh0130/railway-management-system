@@ -1,52 +1,43 @@
-# 🚆 Railway Reservation System – Java Spring Boot & ReactJS
+# Railway Reservation System
 
-## 📌 Project Description  
-The **Railway Reservation System** is a full-stack web application that allows users to **book train tickets, manage reservations, and check booking history**. The system is built using **Java (Spring Boot) for the backend** and **ReactJS for the frontend**, with **MySQL as the database**.  
+This is a full-stack Railway Reservation System built using **React (Vite, Tailwind CSS)** for the frontend and **Spring Boot (Maven, PostgreSQL)** for the backend. The system allows users to book train tickets, view schedules, and manage their reservations.
 
-This application ensures **secure user authentication, train search functionality, seat availability tracking, and reservation management**. The backend follows a **RESTful API architecture**, making it scalable and maintainable.
+## Features
+### 👤 User Features
+✅ User Authentication & Role-Based Access (JWT-based security)  
+✅ Search Available Trains (Date-wise & Location-based filtering)  
+✅ Book Tickets & Select Seats  
+✅ View, Modify & Cancel Reservations  
+✅ Check Booking History & Payment Status  
 
----
+### 🛠️ Admin Features
+✅ Manage Train Schedules  
+✅ Add/Edit/Remove Train Details  
+✅ View All Bookings & User Data  
 
-## 🔧 Technologies Used  
+## Tech Stack
+### Backend (Spring Boot)
+- Java 17 – Programming Language
+- Spring Boot – Backend Framework
+- Spring Data JPA – Database Management
+- Spring Security – Authentication & Authorization
+- PostgreSQL – Relational Database
+- REST APIs – For data exchange between frontend & backend
 
-### **Backend (Spring Boot)**
-- **Java 17** – Programming Language  
-- **Spring Boot** – Backend Framework  
-- **Spring Data JPA** – Database Management  
-- **Spring Security** – Authentication & Authorization  
-- **MySQL** – Relational Database  
-- **REST APIs** – For data exchange between frontend & backend  
+### Frontend (ReactJS)
+- React with Vite – UI Framework
+- React Router – Navigation Management
+- Tailwind CSS – UI Styling
+- Axios – API Requests Handling
 
-### **Frontend (ReactJS)**
-- **ReactJS** – UI Framework  
-- **React Router** – Navigation Management  
-- **Bootstrap** – UI Styling  
-- **Axios** – API Requests Handling  
+### Development & Deployment
+- Docker – Containerization
+- Postman – API Testing
+- IntelliJ IDEA / VS Code – IDEs
 
-### **Development & Deployment**
-- **Docker** – Containerization  
-- **Postman** – API Testing  
-- **IntelliJ IDEA / VS Code** – IDEs  
-
----
-
-## 📜 Features  
-
-### **👤 User Features**
-✅ **User Authentication & Role-Based Access** (JWT-based security)  
-✅ **Search Available Trains** (Date-wise & Location-based filtering)  
-✅ **Book Tickets & Select Seats**  
-✅ **View, Modify & Cancel Reservations**  
-✅ **Check Booking History & Payment Status**  
-
-### **🛠️ Admin Features**
-✅ **Manage Train Schedules**  
-✅ **Add/Edit/Remove Train Details**  
-✅ **View All Bookings & User Data**  
-
-### **🔗 REST API Endpoints**
-| Endpoint  | Method | Description |
-|-----------|--------|-------------|
+## 🔗 REST API Endpoints
+| Endpoint | Method | Description |
+|----------|--------|-------------|
 | `/api/auth/register` | `POST` | Register a new user |
 | `/api/auth/login` | `POST` | Authenticate user and get JWT token |
 | `/api/trains` | `GET` | Get all available trains |
@@ -56,35 +47,31 @@ This application ensures **secure user authentication, train search functionalit
 | `/api/admin/trains` | `POST` | Add a new train (Admin) |
 | `/api/admin/trains/{id}` | `DELETE` | Remove a train (Admin) |
 
-*(More endpoints are available in the API documentation.)*
-
----
-
-## 🚀 Installation & Setup  
-
-### **1️⃣ Clone the Repository**
+## 🚀 Installation & Setup
+### 1️⃣ Clone the Repository
 ```sh
 git clone https://github.com/Utkarsh0130/railway-reservation-system.git
 cd railway-reservation-system
 2️⃣ Backend (Spring Boot) Setup
 📦 Prerequisites:
 ✅ Java 17+ installed
-✅ MySQL database running
+✅ PostgreSQL database running
 
 💻 Steps to Run Backend
-cd backend
+cd onlineRailwaySystem
 mvn clean install
 mvn spring-boot:run
 🔹 The Spring Boot server will start on http://localhost:8080
+
 3️⃣ Frontend (ReactJS) Setup
 📦 Prerequisites:
 ✅ Node.js & npm installed
 
 💻 Steps to Run Frontend
-cd frontend
+cd railway-reservation-system
 npm install
-npm start
-🔹 The React app will start on http://localhost:3000
+npm run dev
+🔹 The React app will start on http://localhost:5173
 
 🔗 API Documentation
 You can find detailed API documentation using Swagger UI:
@@ -100,10 +87,15 @@ You can find detailed API documentation using Swagger UI:
 Want to contribute? Follow these steps:
 
 Fork the repository
+
 Create a new branch (feature-branch)
+
 Commit changes (git commit -m "Added new feature")
+
 Push to GitHub (git push origin feature-branch)
+
 Submit a Pull Request (PR)
+
 📝 License
 This project is MIT Licensed. You can use, modify, and distribute it freely.
 
@@ -114,4 +106,3 @@ This project is MIT Licensed. You can use, modify, and distribute it freely.
 📂 GitHub: github.com/Utkarsh0130
 
 🚀 If you find this project useful, don't forget to ⭐ star the repository! ⭐
-
